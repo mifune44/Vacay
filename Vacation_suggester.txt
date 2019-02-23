@@ -1,12 +1,12 @@
-# _Portfolio_
+# _Vacation suggester_
 
-#### _1/16/2019_
+#### _2/22/2019_
 
  By _**Joshua Landry**_
 
 ## Description
 
-_Launching pad to showcase my programming work._
+_Picks a random vacation based on your preferences showcasing javascript and jquery_
 
 ## Setup/Installation Requirements
 
@@ -22,6 +22,7 @@ _Joshua Landry mifune44@gmail.com_
 * _HTML_
 * _CSS_
 * _BOOTSTRAP_
+* _JQUERY_
 
 ### License
 
