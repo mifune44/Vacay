@@ -4,18 +4,65 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
      <script src="js/jquery-3.3.1.js"></script>
      <script src="js/scripts.js"></script>
-    <title>HTML help</title>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+    <h1 class="display-4">Josh's Guide to Living Dangerously</h1>
+    <h2>A useful tool to help you get where ya want to go.</h2>
+     <p class="secondary">Fixing to travel waaaay off the beaten path? Abhor tourism but still yearn to see the world? Is the soul crushing banality and the vegetal torpor of modern life pushing you into the pursuit of more dangerous escapades?  Well friend, we may have a solution.</p>
+        </div>
+      </div>
   </head>
   <body>
     <div class="container">
-      <h1>HTML help</h1>
+           <h2>Allow me to help by answering these simple questions:</h2>
+      <form id="blanks">
 
-      <p>This is a very special page. If you click somewhere, it will tell you what type of HTML element you clicked on.</p>
+     <div class="form-group">
+       <h4>Climate?</h4>
+       <select class="form-control" id="weather">
+         <option>Cold</option>
+         <option>Hot</option>
+        </select>
+     </div>
 
-      <p>Look at this cute walrus!</p>
-      <img src="img/walrus.jpg">
-    </div>
+     <div class="form-group">
+       <h4>Price?</h4>
+       <select class="form-control" id="active">
+         <option>save some dough</option>
+         <option>cash to blow</option>
+        </select>
+     </div>
 
-   
+     <div class="form-group">
+      <h4>Location?</h4>
+      <select class="form-control" id="where">
+        <option>Rural</option>
+        <option>Metro</option>
+      </select>
+     </div>
+
+     <div class="form-group">
+      <h4>Vices?</h4>
+      <select class="form-control" id="vice">
+        <option>Alcohol</option>
+        <option>drugs</option>
+        <option>sex</option>
+        <option>the most dangerous game</option>
+      </select>
+     </div>
+
+     <div class="form-group">
+      <h4>Obligation?</h4>
+      <select class="form-control" id="oblige">
+        <option>work</option>
+        <option>play</option>
+      </select>
+     </div>
+
+      <button type="submit" class="btn">Submit</button>
+      </form>
+
+    
+      </div>
   </body>
 </html>
