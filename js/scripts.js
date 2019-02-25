@@ -13,86 +13,38 @@ $(document).ready(function() {
     var vice = $("select#vice").val();
     var oblige = $("select#oblige").val();
     
-    if (weather === 'hot' && cost === 'rich') {
+       if (vice === 'murder') {
+          $("#dubai").hide();
+          $("#siberia").hide();
+          $("#zurich").hide();
+          $("#sierra_leone").hide();
+          $("#hell").fadeIn();
+        } else if (weather === 'hot' && cost === 'cheap' && where === 'rural') {
+          $("#dubai").hide();
+          $("#siberia").hide();
+          $("#zurich").hide();
+          $("#sierra_leone").fadeIn();
+          $("#hell").hide();
+        } else if (weather === 'cold' && cost === "rich" && where === 'metro') {
+          $("#dubai").hide();
+          $("#siberia").hide();
+          $("#zurich").fadeIn();
+          $("#sierra_leone").hide();
+          $("#hell").hide();
+        } else if (weather === 'cold' && cost === 'cheap' && where === 'rural' && oblige == 'work') {
+          $("#dubai").hide();
+          $("#siberia").fadeIn();
+          $("#zurich").hide();
+          $("#sierra_leone").hide();
+          $("#hell").hide();
+        } else if (weather === 'hot' && cost === 'rich' && where === 'metro') {
           $("#dubai").fadeIn();
           $("#siberia").hide();
           $("#zurich").hide();
           $("#sierra_leone").hide();
-          $("#hell").hide();
-        } else if (weather === 'hot' && cost === 'cheap') {
-          $("#dubai").hide();
-          $("#siberia").hide();
-          $("#zurich").hide();
-          $("#sierra_leone").fadeIn();
-          $("#hell").hide();
-        } else if (weather === 'cold' && cost === "rich") {
-          $("#dubai").hide();
-          $("#siberia").hide();
-          $("#zurich").fadeIn();
-          $("#sierra_leone").hide();
-          $("#hell").hide();
-      } else if (weather === 'cold' && cost === 'cheap') {
-          $("#dubai").hide();
-          $("#siberia").fadeIn();
-          $("#zurich").hide();
-          $("#sierra_leone").hide();
-          $("#hell").hide();
-        } else if (vice === 'cold') {
-          $("#dubai").hide();
-          $("#siberia").hide();
-          $("#zurich").hide();
-          $("#sierra_leone").fadeIn();
-          $("#hell").hide();
-        } else if (cost === '' && where === '') {
-          $("#dubai").hide();
-          $("#siberia").hide();
-          $("#zurich").fadeIn();
-          $("#sierra_leone").hide();
-          $("#hell").hide();
-        } else if (cost === '' && where === '') {
-          $("#dubai").fadeIn();
-          $("#siberia").hide();
-          $("#zurich").hide();
-          $("#sierra_leone").hide();
-          $("#hell").hide();
-        } else if (oblige === '' || cost === '' || where === '') {
-          $("#dubai").hide();
-          $("#siberia").fadeIn();
-          $("#zurich").hide();
-          $("#sierra_leone").hide();
-          $("#hell").hide();
-        } else if (vice === 'cool' && where === '') {
-          $("#dubai").hide();
-          $("#siberia").hide();
-          $("#zurich").hide();
-          $("#sierra_leone").fadeIn();
-          $("#hell").hide();
-        } else if (vice === 'warm' || oblige === '') {
-          $("#dubai").hide();
-          $("#siberia").fadeIn();
-          $("#zurich").hide();
-          $("#sierra_leone").hide();
-          $("#hell").hide();
-        } else if (vice === 'dry') {
-          $("#dubai").hide();
-          $("#siberia").hide();
-          $("#zurich").fadeIn();
-          $("#sierra_leone").hide();
-          $("#hell").hide();
-        } else if ( === 'luxe') {
-          $("#dubai").hide();
-          $("#siberia").fadeIn();
-          $("#zurich").hide();
-          $("#sierra_leone").hide();
-          $("#hell").hide();
-        } else {
-          $("#dubai").hide();
-          $("#siberia").hide();
-          $("#zurich").fadeIn();
-          $("#sierra_leone").hide();
-          $("#hell").hide();
+          $("#hell").hide(); 
         }
-    console.log(weather);
+    // console.log(hell);
 
         event.preventDefault();
       });
