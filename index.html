@@ -4,65 +4,95 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
      <script src="js/jquery-3.3.1.js"></script>
      <script src="js/scripts.js"></script>
+
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
     <h1 class="display-4">Josh's Guide to Living Dangerously</h1>
     <h2>A useful tool to help you get where ya want to go.</h2>
-     <p class="secondary">Fixing to travel waaaay off the beaten path? Abhor tourism but still yearn to see the world? Is the soul crushing banality and the vegetal torpor of modern life pushing you into the pursuit of more dangerous escapades?  Well friend, we may have a solution.</p>
+     <p class="secondary">Fixing to travel waaaay off the beaten path? Abhor tourism but still yearn to see the world? Is the soul crushing banality and the vegetal torpor of modern life pushing you into the pursuit of <em>risk?</em>  Well friend, we may have a solution.</p>
         </div>
       </div>
   </head>
   <body>
     <div class="container">
-           <h2>Allow me to help by answering these simple questions:</h2>
-      <form id="blanks">
+           <h2>Allow me to help by answering these simple questions:</h2>      
+      
+      <form id="user-prefs">
+      <div class="form-group">
+        <h4>What's your handle?</h4>
+        <input id="name" type="text">
+      </div>     
+
 
      <div class="form-group">
        <h4>Climate?</h4>
        <select class="form-control" id="weather">
-         <option>Cold</option>
-         <option>Hot</option>
+         <option value="cold">Cold</option>
+         <option value="hot">Hot</option>
         </select>
      </div>
 
      <div class="form-group">
        <h4>Price?</h4>
-       <select class="form-control" id="active">
-         <option>save some dough</option>
-         <option>cash to blow</option>
+       <select class="form-control" id="cost">
+         <option value="cheap">save some dough</option>
+         <option value="rich">cash to blow</option>
         </select>
      </div>
 
      <div class="form-group">
       <h4>Location?</h4>
       <select class="form-control" id="where">
-        <option>Rural</option>
-        <option>Metro</option>
+        <option value="rural">Rural</option>
+        <option value="metro">Metropolitan</option>
       </select>
      </div>
 
      <div class="form-group">
       <h4>Vices?</h4>
       <select class="form-control" id="vice">
-        <option>Alcohol</option>
-        <option>drugs</option>
-        <option>sex</option>
-        <option>the most dangerous game</option>
+        <option value="booze">Alcohol</option>
+        <option value="drugs">drugs</option>
+        <option value="sex">sex</option>
+        <option value="murder">the most dangerous game</option>
       </select>
      </div>
 
      <div class="form-group">
       <h4>Obligation?</h4>
       <select class="form-control" id="oblige">
-        <option>work</option>
-        <option>play</option>
+        <option value="work">work</option>
+        <option value="play">play</option>
       </select>
      </div>
 
       <button type="submit" class="btn">Submit</button>
       </form>
 
-    
-      </div>
+        <div class="gone" id="dubai">
+          <h2>Welcome to Dubai!</h2>
+          <img class="img-responsive" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/08/30/14/dubai-main.jpg?w968h681" alt="Dubai"/>
+        </div>
+
+        <div class="gone" id="siberia">
+          <h2>Welcome to Siberia!</h2>
+          <img class="img-responsive" src="https://i0.wp.com/www.learning-history.com/wp-content/uploads/2017/05/Siberia-gulag-5.jpg?resize=850%2C575" alt="Siberia"/>
+        </div>
+
+        <div class="gone" id="zurich">
+          <h2>Welcome to Zurich!</h2>
+          <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3UGCgvSDPLHeOuaTxUna6rKYLVD0pjlZVAD7aYSP_JfWaouKT" alt="Zurich"/>>
+        </div>
+        
+        <div class="gone" id="sierra_leone">
+          <h2>Welcome to Sierra Leone!</h2>
+          <img class="img-responsive" src="https://ichef.bbci.co.uk/news/304/media/images/54461000/jpg/_54461107_sierra_ruf_afp.jpg" alt="seirra leone"/>
+        </div>
+
+        <div class="gone" id="hell">
+          <h2>Welcome to HELL!</h2>
+          <img class="img-responsive" src="https://wp-media.patheos.com/subdomain/sites/8/2019/01/shutterstock_716962249.jpg" alt="HELL"/>
+        </div>
+        </div>
   </body>
 </html>
