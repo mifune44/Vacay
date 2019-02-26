@@ -1,1 +1,9 @@
-1
+body {
+  background-color: #ffe6e6;
+}
+button {
+   width: 400px;
+   height: 40px;
+   color: white;
+   background-color: gold;
+ } 

@@ -18,7 +18,7 @@ $(document).ready(function() {
           $("#siberia").hide();
           $("#zurich").hide();
           $("#sierra_leone").hide();
-          $("#hell").fadeIn();
+          $("#hell").slideDown();
         } else if (weather === 'hot' && cost === 'cheap' && where === 'rural') {
           $("#dubai").hide();
           $("#siberia").hide();
